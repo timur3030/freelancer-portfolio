@@ -1,8 +1,8 @@
 .footer {
   margin-top: auto;
   padding: 60px 0 50px;
-  background: $dark-bg;
-  color: $promo-text;
+  background-color: $bg-header-footer;
+  color: $text-promo;
   &__wrapper {
     display: flex;
     flex-direction: column;

@@ -39,7 +39,16 @@
   }
   .nav {
     &__list {
+      order: 3;
       display: none;
+      column-gap: 20px;
+    }
+    &__list.active {
+      display: flex;
+    }
+    &__row {
+      justify-content: space-between;
+      row-gap: 30px;
     }
   }
   .promo {
@@ -65,7 +74,7 @@
     }
   }
   .section {
-    padding: 105px 0;
+    padding: 105px 0 40px;
     &__title {
       font-size: 40px;
     }
@@ -91,11 +100,31 @@
     max-width: 100%;
     padding: 0 15px;
   }
+  .nav {
+    &__row {
+      column-gap: 20px;
+    }
+  }
   .promo {
     &__title {
       font-size: 30px;
       span {
         font-size: 40px;
+      }
+    }
+  }
+
+  @media (max-width: 391px) {
+    .dark-mode-btn {
+      order: 4;
+      display: none;
+    }
+    .dark-mode-btn.active {
+      display: flex;
+    }
+    .nav {
+      &__list {
+        column-gap: 19px;
       }
     }
   }

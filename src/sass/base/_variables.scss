@@ -1,10 +1,28 @@
 $black: #171717;
-$black-border: #26292d;
 $white: #fff;
 $purple: #5c62ec;
+$dark-border: #26292d;
 
-$dark-bg: $black;
-$dark-border: $black-border;
-$promo-text: $white;
+$bg-header-footer: $black;
+$text-promo: $white;
 $accent: $purple;
-$text-color: $black;
+
+:root {
+  // Light mode
+  --bg-color: #fff;
+  --bg-promo: #303030;
+  --text-color: #171717;
+  --accent: #5c62ec;
+  --card: #fff;
+  --box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.25);
+}
+
+.dark {
+  // Dark mode
+  --bg-color: #252526;
+  --bg-promo: #171717;
+  --text-color: #fff;
+  --accent: #fff;
+  --card: #535353;
+  --box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.9);
+}

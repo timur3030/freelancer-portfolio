@@ -3,13 +3,13 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding-top: 65px;
-  background-color: $dark-bg;
+  padding: 105px 0 40px;
+  background-color: var(--bg-promo);
   background-image: url("../img/promo-bg.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center center;
-  color: $promo-text;
+  color: $text-promo;
   text-align: center;
   &__wrapper {
     max-width: 627px;
@@ -36,8 +36,8 @@
     margin-top: 40px;
     padding: 12px 28px;
     border-radius: 5px;
-    background: $accent;
-    color: $promo-text;
+    background-color: $accent;
+    color: $text-promo;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;

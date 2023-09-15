@@ -24,6 +24,18 @@
               <a href="./contacts.html" class="nav__link">Contacts</a>
             </li>
           </ul>
+          <button class="dark-mode-btn">
+            <img
+              src="icons/sun.svg"
+              alt="Light mode"
+              class="dark-mode-btn__icon"
+            />
+            <img
+              src="icons/moon.svg"
+              alt="Dark mode"
+              class="dark-mode-btn__icon"
+            />
+          </button>
           <div class="hamburger">
             <div></div>
             <div></div>
@@ -33,12 +45,14 @@
       </div>
     </nav>
 
+    <div class="overlay"></div>
+
     <section class="promo">
       <div class="container">
         <div class="promo__wrapper">
           <h1 class="promo__title">
-            <span>Hi, my name is <span class="accent">Timur</span></span> a
-            frontend developer
+            <span>Hi, my name is <span class="accent">Timur</span></span
+            ><br />a frontend developer
           </h1>
           <p class="promo__text">with passion for learning and creating.</p>
           <a href="#" class="btn">Download CV</a>
@@ -51,39 +65,39 @@
         <h2 class="projects__title">Projects</h2>
         <ul class="projects__list">
           <li class="projects__item">
-            <img src="../img/projects/01.jpg" alt="" class="projects__img" />
+            <img src="img/projects/potolok.webp" alt="" class="projects__img" />
+            <h3 class="projects__item-title">Натяжные потолки</h3>
+          </li>
+          <li class="projects__item">
+            <img src="img/projects/01.jpg" alt="" class="projects__img" />
             <h3 class="projects__item-title">Gaming streaming portal</h3>
           </li>
           <li class="projects__item">
-            <img src="../img/projects/01.jpg" alt="" class="projects__img" />
+            <img src="img/projects/01.jpg" alt="" class="projects__img" />
             <h3 class="projects__item-title">Gaming streaming portal</h3>
           </li>
           <li class="projects__item">
-            <img src="../img/projects/01.jpg" alt="" class="projects__img" />
+            <img src="img/projects/01.jpg" alt="" class="projects__img" />
             <h3 class="projects__item-title">Gaming streaming portal</h3>
           </li>
           <li class="projects__item">
-            <img src="../img/projects/01.jpg" alt="" class="projects__img" />
+            <img src="img/projects/01.jpg" alt="" class="projects__img" />
             <h3 class="projects__item-title">Gaming streaming portal</h3>
           </li>
           <li class="projects__item">
-            <img src="../img/projects/01.jpg" alt="" class="projects__img" />
+            <img src="img/projects/01.jpg" alt="" class="projects__img" />
             <h3 class="projects__item-title">Gaming streaming portal</h3>
           </li>
           <li class="projects__item">
-            <img src="../img/projects/01.jpg" alt="" class="projects__img" />
+            <img src="img/projects/01.jpg" alt="" class="projects__img" />
             <h3 class="projects__item-title">Gaming streaming portal</h3>
           </li>
           <li class="projects__item">
-            <img src="../img/projects/01.jpg" alt="" class="projects__img" />
+            <img src="img/projects/01.jpg" alt="" class="projects__img" />
             <h3 class="projects__item-title">Gaming streaming portal</h3>
           </li>
           <li class="projects__item">
-            <img src="../img/projects/01.jpg" alt="" class="projects__img" />
-            <h3 class="projects__item-title">Gaming streaming portal</h3>
-          </li>
-          <li class="projects__item">
-            <img src="../img/projects/01.jpg" alt="" class="projects__img" />
+            <img src="img/projects/01.jpg" alt="" class="projects__img" />
             <h3 class="projects__item-title">Gaming streaming portal</h3>
           </li>
         </ul>
@@ -96,22 +110,22 @@
           <ul class="footer__list">
             <li class="footer__link">
               <a href="https://facebook.com/timur.rizakhanov" target="_blank"
-                ><img src="../icons/social/facebook.svg" alt=""
+                ><img src="../icons/social/facebook.svg" alt="facebook"
               /></a>
             </li>
             <li class="footer__link">
               <a href="https://instagram.com/timur.biker" target="_blank"
-                ><img src="../icons/social/instagram.svg" alt=""
+                ><img src="../icons/social/instagram.svg" alt="instagram"
               /></a>
             </li>
             <li class="footer__link">
               <a href="https://github.com/timur3030" target="_blank"
-                ><img src="../icons/social/github.svg" alt=""
+                ><img src="../icons/social/github.svg" alt="github"
               /></a>
             </li>
             <li class="footer__link">
               <a href="https://t.me/timur05" target="_blank"
-                ><img src="../icons/social/telegram.svg" alt=""
+                ><img src="../icons/social/telegram.svg" alt="telegram"
               /></a>
             </li>
           </ul>
@@ -121,5 +135,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
