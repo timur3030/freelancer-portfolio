@@ -5,22 +5,27 @@ document.addEventListener("DOMContentLoaded", () => {
     overlay = document.querySelector(".overlay"),
     btnDarkMode = document.querySelector(".dark-mode-btn");
 
-  //   if (document.documentElement.scrollTop > 0) {
-  //     header.classList.add("blackBackground");
-  //   }
+  // Проверка темной темы в localStorage
 
-  //   window.addEventListener("scroll", function () {
-  //     if (document.documentElement.scrollTop > 0) {
-  //       header.classList.add("blackBackground");
-  //     } else {
-  //       header.classList.remove("blackBackground");
-  //     }
-  //   });
+  if (localStorage.getItem("darkMode") === "dark") {
+    btnDarkMode.classList.add("dark-mode-btn-active");
+    const isDark = document.body.classList.add("dark");
+  }
+
+  // Включение ночного режима по кнопке
 
   btnDarkMode.addEventListener("click", () => {
     btnDarkMode.classList.toggle("dark-mode-btn-active");
-    document.body.classList.toggle("dark");
+    const isDark = document.body.classList.toggle("dark");
+
+    if (isDark) {
+      localStorage.setItem("darkMode", "dark");
+    } else {
+      localStorage.setItem("darkMode", "light");
+    }
   });
+
+  // Открытие меню при нажатии на гамбургер
 
   hamburger.addEventListener("click", () => {
     navList.classList.toggle("active");
@@ -29,6 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
     overlay.classList.toggle("active");
   });
 
+  // Функция закрытия меню и удаления активных классов с элементов
+
   function removeActiveClass() {
     navList.classList.remove("active");
     hamburger.classList.remove("hamburger_active");
@@ -36,9 +43,13 @@ document.addEventListener("DOMContentLoaded", () => {
     overlay.classList.remove("active");
   }
 
+  // Закрытие меню при нажатии на любой пунк в меню
+
   navLinks.forEach((item) => {
     item.addEventListener("click", removeActiveClass);
   });
+
+  // Закрытие меню при нажатии вне области меню
 
   overlay.addEventListener("click", removeActiveClass);
 

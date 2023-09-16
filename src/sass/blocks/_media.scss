@@ -127,5 +127,17 @@
         column-gap: 19px;
       }
     }
+    .section__item {
+      img {
+        width: 95px;
+        height: 95px;
+      }
+    }
+    .projects {
+      &__img {
+        width: 290px;
+        height: 218px;
+      }
+    }
   }
 }

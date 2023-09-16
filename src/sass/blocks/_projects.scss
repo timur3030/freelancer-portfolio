@@ -20,14 +20,24 @@
     background-color: var(--card);
     border-radius: 10px;
     box-shadow: var(--box-shadow);
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(1.05);
+    }
     &-title {
       padding: 15px 20px 25px;
       font-size: 24px;
       font-weight: 700;
       line-height: 130%;
     }
+    a {
+      color: var(--text-color);
+    }
   }
   &__img {
     border-radius: 10px;
+    width: 370px;
+    height: 278px;
+    object-fit: cover;
   }
 }
