@@ -37,6 +37,10 @@
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     background-color: var(--card);
+    transition: transform 1s ease;
+    &:hover {
+      transform: scale(0.9);
+    }
     img {
       width: 125px;
       height: 125px;

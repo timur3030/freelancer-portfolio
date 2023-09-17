@@ -34,6 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
       animeElements.forEach((elem) => {
         elem.classList.toggle("anime");
       });
+      if (animeElements[0].classList.contains("anime")) {
+        btn.textContent = "Stop animation";
+      } else {
+        btn.textContent = "Start animation";
+      }
     });
   }
 
