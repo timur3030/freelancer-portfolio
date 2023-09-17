@@ -15,6 +15,7 @@
   &__wrapper {
     position: relative;
     max-width: 627px;
+    user-select: none;
   }
   &__title {
     position: relative;
@@ -51,6 +52,7 @@
     line-height: 24px;
     letter-spacing: 0.15px;
     transition: opacity 0.2s ease;
+    user-select: none;
     cursor: pointer;
     &:hover {
       opacity: 0.8;
