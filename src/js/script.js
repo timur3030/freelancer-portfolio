@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
     navList = document.querySelector(".nav__list"),
     navLinks = document.querySelectorAll(".nav__link"),
     overlay = document.querySelector(".overlay"),
-    btnDarkMode = document.querySelector(".dark-mode-btn");
+    btnDarkMode = document.querySelector(".dark-mode-btn"),
+    btn = document.querySelector(".btn"),
+    animeElements = document.querySelectorAll(".anime-element");
 
   // Проверка темной темы в localStorage
 
@@ -24,6 +26,16 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("darkMode", "light");
     }
   });
+
+  // Запуск анимации по кнопке
+
+  if (btn) {
+    btn.addEventListener("click", () => {
+      animeElements.forEach((elem) => {
+        elem.classList.toggle("anime");
+      });
+    });
+  }
 
   // Открытие меню при нажатии на гамбургер
 

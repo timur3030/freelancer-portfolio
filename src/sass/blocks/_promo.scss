@@ -5,16 +5,20 @@
   min-height: 100vh;
   padding: 105px 0 40px;
   background-color: var(--bg-promo);
-  background-image: url("../img/promo-bg.png");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center center;
+  // background-image: url("../img/promo-bg.png");
+  // background-repeat: no-repeat;
+  // background-size: auto;
+  // background-position: center center;
+  overflow: hidden;
   color: $text-promo;
   text-align: center;
   &__wrapper {
+    position: relative;
     max-width: 627px;
   }
   &__title {
+    position: relative;
+    z-index: 2;
     font-size: 40px;
     font-weight: 700;
     line-height: 140%;
@@ -26,12 +30,16 @@
     }
   }
   &__text {
+    position: relative;
+    z-index: 2;
     margin-top: 20px;
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
   }
   .btn {
+    position: relative;
+    z-index: 2;
     display: inline-block;
     margin-top: 40px;
     padding: 12px 28px;
@@ -50,5 +58,92 @@
       position: relative;
       top: 1px;
     }
+  }
+}
+
+// Animation
+
+.anime-element {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  width: 444px;
+  height: 444px;
+  border: solid 1px var(--anime);
+  border-bottom: none;
+  z-index: 1;
+  &:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(-75deg);
+  }
+  &:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(-60deg);
+  }
+  &:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  &:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(-30deg);
+  }
+  &:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(-15deg);
+  }
+}
+
+.anime {
+  &:nth-child(1) {
+    animation: anime1 12s ease-in-out infinite 1s;
+  }
+  &:nth-child(2) {
+    animation: anime2 12s ease-in-out infinite 2s;
+  }
+  &:nth-child(3) {
+    animation: anime3 12s ease-in-out infinite 3s;
+  }
+  &:nth-child(4) {
+    animation: anime4 12s ease-in-out infinite 4s;
+  }
+  &:nth-child(5) {
+    animation: anime5 12s ease-in-out infinite 5s;
+  }
+}
+
+@keyframes anime1 {
+  0% {
+    transform: translate(-50%, -50%) rotate(-75deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(885deg);
+  }
+}
+@keyframes anime2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(-60deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(900deg);
+  }
+}
+@keyframes anime3 {
+  0% {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(915deg);
+  }
+}
+@keyframes anime4 {
+  0% {
+    transform: translate(-50%, -50%) rotate(-30deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(930deg);
+  }
+}
+@keyframes anime5 {
+  0% {
+    transform: translate(-50%, -50%) rotate(-15deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(945deg);
   }
 }

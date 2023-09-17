@@ -113,31 +113,35 @@
       }
     }
   }
+}
 
-  @media (max-width: 391px) {
-    .dark-mode-btn {
-      order: 4;
-      display: none;
+@media (max-width: 391px) {
+  .dark-mode-btn {
+    order: 4;
+    display: none;
+  }
+  .dark-mode-btn.active {
+    display: flex;
+  }
+  .nav {
+    &__list {
+      column-gap: 19px;
     }
-    .dark-mode-btn.active {
-      display: flex;
+  }
+  .section__item {
+    img {
+      width: 95px;
+      height: 95px;
     }
-    .nav {
-      &__list {
-        column-gap: 19px;
-      }
+  }
+  .projects {
+    &__img {
+      width: 290px;
+      height: 218px;
     }
-    .section__item {
-      img {
-        width: 95px;
-        height: 95px;
-      }
-    }
-    .projects {
-      &__img {
-        width: 290px;
-        height: 218px;
-      }
-    }
+  }
+  .anime-element {
+    width: 320px;
+    height: 320px;
   }
 }
